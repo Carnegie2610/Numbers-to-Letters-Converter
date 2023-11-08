@@ -41,11 +41,11 @@ function convertNumber(number)
        }
 
        //treatment of the hundreds
-       hundredsout = unitstoletter[hundreds]
+       hundredsout = hundreds > 0 ? unitstoletter[hundreds] + ' '+ 'hundred' + ' and ' : ' '
 
 
 
-        return tensout + unitsout
+        return hundredsout + tensout + unitsout
     }
 
 
